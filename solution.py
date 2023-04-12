@@ -7,5 +7,5 @@ chat_id = 38897891  # Ваш chat ID, не меняйте название пе�
 def solution(x: np.array, y: np.array) -> bool:
     from scipy.stats import anderson_ksamp
     pval = anderson_ksamp([x, y]).pvalue
-    res = p < 0.06
+    res = pval < 0.06
     return res
