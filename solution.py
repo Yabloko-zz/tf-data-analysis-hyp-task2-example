@@ -5,7 +5,7 @@ import numpy as np
 chat_id = 38897891  # Ваш chat ID, не меняйте название переменной
 
 def solution(x: np.array, y: np.array) -> bool:
-    import scipy.stats import cramervonmises_2samp
+    from scipy.stats import cramervonmises_2samp
     stat, p = cramervonmises_2samp(x, y)
     res = p < 0.06
     return res
